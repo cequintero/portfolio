@@ -1,0 +1,297 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+h1,h2,h3,p,span, a{
+	font-family: arial;
+}
+
+.fullscreen{
+	width: 100%;
+	height: 100vh;
+	color: #333;
+}
+
+.background{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #444;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.mainmenu{
+	position: relative;
+	width: 90%;
+	top: 0px;
+	left: 0px;
+	margin: 30px 5%;
+	display: flex;
+	justify-content: space-between;
+	color: #333;
+}
+
+.mainmenu nav a{
+	margin: 0px 2px;
+	padding: 5px 5px;
+}
+.focus{
+	border-bottom: solid 3px #00c4ec;
+    color: #00c4ec !important;
+
+}
+
+.local{
+	text-decoration: none;
+	color: inherit;
+
+}
+
+.mainmenu p, .initialmessage h1{
+	font-size: 50px;
+	font-weight: 300;
+}
+
+.initialmessage{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 120px;
+	color: #fff;
+}
+
+.initialmessage span{
+	color: #555;
+}
+
+h1, .portafolio h2, .blog h2 {
+	font-size: 50px;
+	font-weight: 300;
+}
+
+.initialmessage span{
+	font-size: 1.2em;
+}
+
+.fullwidth{
+	position: relative;
+	width: 90%;
+	padding: 5%;
+}
+
+.frase p{
+	font-size: 3em;
+	text-align: center;
+	font-weight: 600;
+	margin: 30px 0px;
+	color: #333;
+	padding: 0px 10%;
+	font-weight: 300
+;}
+
+.products{
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+
+.products h1, .portafolio h2, .blog h2{
+	margin: 40px;
+	margin-bottom: 90px;
+}
+
+.fullcontainer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/*box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);*/
+}
+
+.card{
+	padding: 50px;
+	width: calc( 25% - 100px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-width: 260px;
+	background: #2b2b2b;
+	text-align: center;
+}
+
+.card h2{
+	font-size: 1.8em;
+	margin-bottom: 20px
+}
+
+.card:nth-child(1){
+	width: calc( 50% - 100px);
+	background-color: #fff;
+	color: #333;
+	min-width: 620px;
+}
+
+.card:nth-child(3){
+	background-color: slateblue;
+}
+
+.card:nth-child(6){
+background-color: crimson;
+}
+.card:nth-child(1) .button {
+	border: solid 1px #333;
+}
+
+
+.image1{
+	background-image: url(../img/imagen01.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.image2{
+	background-image: url(../img/imagen02.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.button, .button-black{
+	padding: 8px 20px;
+	margin-top: 20px;
+	align-self: center;
+	border-radius: 3px  ;
+	border: solid 1px #FFF;
+	color: #fff;
+}
+
+.button-black{
+	border: solid 1px #333 !important;
+	color: #333 !important;
+}
+
+.button:hover{
+	background-color: rgba(170,170,170,.5);
+}
+
+.portafolio{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.blog{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: gainsboro;
+}
+
+.poster{
+	position: relative;
+	width: calc(25% - 20px);
+	margin: 10px;
+	background: #888;
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 5px 5px 22px 0px rgba(0,0,0,0.4);
+}
+
+.img-box img{
+	width: 100%;
+	display: block;
+}
+
+.img-box{
+	transition: .5s;
+}
+
+.poster .content{
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	bottom: -100%;
+	padding: 20px;
+	text-align: center;
+	box-sizing: border-box;
+	transition: .5s;
+}
+
+.poster:hover .img-box{
+	opacity: .5;
+}
+
+.poster:hover .content{
+	bottom: 0px;
+}
+
+/*:nth-child(1)*/
+.poster:nth-child(1) .content{
+	background: linear-gradient(0deg, #ddcf22, transparent);
+}
+
+
+.poster:nth-child(2) .content{
+	background: linear-gradient(0deg, #dd8a22, transparent);
+}
+.poster:nth-child(3) .content{
+	background: linear-gradient(0deg, #DD6922, transparent);
+}
+.poster:nth-child(4) .content{
+	background: linear-gradient(0deg, #2895D8, transparent);
+}
+
+
+.poster .content h3{
+	color: #fff;
+	font-size: 1.3em;
+}
+
+.poster .content span{
+	color: #ffeb3b;
+	font-size: .8em;
+}
+
+.content p{
+	margin: 20px 0px;
+}
+
+.xlcard p{
+	margin: 20px 0px;
+}
+
+.xlcard{
+	width: 20%;
+	padding: 30px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.xlcard img{
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+footer{
+	width: 100%;
+	height: 60px;
+	background: #333;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
